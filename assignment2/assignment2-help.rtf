@@ -1,0 +1,14 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Could have hybrid matrix of distances (e.g. sequences)\
+graph clustering shows connections (not distances):\
+\
+1. HCS/min cut. Cut: choose point where you can cut to disconnect portions of the graph. Minimum cut is a cut that requires the removal of minimum number of edges (non trivial cuts are ones where they separate more than 1 node). Minimum cut is where most of the information between 2 nodes occur. Once cut, each subgraph is a cluster and can be scored.\
+\
+2: MCL: markhov clustering. Flow based algorithm. Stochastic matrix of probabilities (normalized). Considers flow of one node to another, but interprets connections as probabilities. "Random walks", from one node to another (not connected), edges are probabilities and getting to the destination = products of probabilities of edges. Iterative process where all random walks are explored, number of paths = how they should be clustered (more paths = clustered together)\
+\
+graph based algorithms are generally fast. Clustering uses matrix: deals with all probability pairs (MCL as well, but it doesn't do all)}
